@@ -213,5 +213,5 @@ copy_button = tk.Button(top_frame, text="Копировать очки навы�
 copy_button.pack(side=tk.LEFT)
 
 root.mainloop()
-
+#Bebebeb
 
