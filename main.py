@@ -109,8 +109,9 @@ def reset_all_points(total_label, value_labels, entry):
     """Сбрасывает все значения очков и обновляет общее количество очков."""
     entry_value = int(entry.get())
     total_label["text"] = str(entry_value)
-    for label in value_labels:
-        label["text"] = "0"
+    for i in range(len(value_labels)):
+        value_labels[i].set("0")
+        update_modifier(value_labels[i], modifier_labels[i])
 
 
 def copy_to_clipboard(value_labels, modifier_labels):
