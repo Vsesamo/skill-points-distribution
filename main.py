@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-
 def calculate_modifier(value):
     """Рассчитывает модификатор на основе значения."""
     if 0 <= value <= 1:
